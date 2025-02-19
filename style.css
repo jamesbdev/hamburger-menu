@@ -30,9 +30,37 @@ nav a {
     display: none;
 }
 
-.line1, .line2, .line3 {
+.burger .line1, .burger .line2, .burger .line3 {
     width: 25px;
     height: 3px;
     background-color: rgb(235, 173, 29);
     margin: 5px 0;
+}
+
+.close .line1, .close .line2 {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(235, 173, 29);
+    margin: 5px 0;
+}
+
+.close .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.close .line2 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    position: relative;
+    left: 2px;
+    top: 7px;
+}
+
+.nav-links-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  background-color: rgb(76, 78, 78);
+  height: 100vh;
+  width: 60%; 
 }
