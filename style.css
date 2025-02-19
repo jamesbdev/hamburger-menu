@@ -1,7 +1,11 @@
+
 nav ul {
     list-style: none;
     padding: 0;
-    color: white;
+
+}
+
+.nav-links-container ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +85,30 @@ nav a {
   flex-direction: column;
   display: none;
   justify-content: center;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.desktop-links {
+    flex-direction: row;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+@media (min-width: 990px) {
+    .burger {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+    }
 
 
+
+ 
 }
