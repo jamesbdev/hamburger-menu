@@ -6,12 +6,9 @@ const closeBtn = document.querySelector('.close');
 
 
 openBtn.addEventListener('click', (event) => {
-  //menuContainer.classList.remove("hide");
   menuContainer.style.display = "flex";
 })
 
 closeBtn.addEventListener('click', (event) => {
-    console.log(event.target);
-    //menuContainer.classList.add("hide");
     menuContainer.style.display = "none";
 });
