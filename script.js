@@ -4,12 +4,14 @@ const openBtn = document.querySelector('.burger');
 const menuContainer = document.querySelector('.nav-links-container');
 const closeBtn = document.querySelector('.close');
 
-console.log(menuContainer);
 
 openBtn.addEventListener('click', (event) => {
-  menuContainer.classList.remove("hide");
+  //menuContainer.classList.remove("hide");
+  menuContainer.style.display = "flex";
 })
 
 closeBtn.addEventListener('click', (event) => {
-    menuContainer.classList.add("hide");
+    console.log(event.target);
+    //menuContainer.classList.add("hide");
+    menuContainer.style.display = "none";
 });
